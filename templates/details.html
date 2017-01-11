@@ -1,0 +1,315 @@
+
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sham - Creative Shopping Theme</title>
+
+	<!-- Load Fonts -->
+	<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Inconsolata:300,400,500,700|Unica+One:300,400,500,700">
+	<!-- All theme style -->
+	<link rel="stylesheet" type="text/css" media="all" href=" {% static "build/css/min.css" %}">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+	    <nav class="navbar navbar-default">
+	      	<div class="container">
+	        	<div class="navbar-header">
+			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <a class="navbar-brand" href="index.html">
+			          	<img src="build/img/logo.svg" alt="Sham Theme">
+			        </a>
+	        	</div>
+	        	<ul class="navbar-nav navbar-icons">
+			    	<li class="shopping-cart">
+			            <a href="products-sidebar-left.html#!" class="li-icon" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+			                <i class="fa fa-cart-plus" aria-hidden="true"></i><span class="badge">4</span>
+			            </a>
+			            <ul class="dropdown-menu">
+			                <div class="dropdown-wrap" slim-scroll="√">
+			                    <li>
+			                       <a href="product.html"><img src="build/img/products/2.jpg" class="img-responsive product-img" alt=""></a>
+			                        <div class="product-details">
+			                            <p class="product-title clearfix"><a href="product.html">Bag Dark Beige</a></p>
+			                            <p class="product-price clearfix">
+											<ins>
+												<span class="amount">$66.50</span>
+											</ins>
+										</p>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <a href="product.html"><img src="build/img/products/24.jpg" class="img-responsive product-img" alt=""></a>
+			                        <div class="product-details">
+			                            <p class="product-title clearfix"><a href="product.html">Shoes Maroon</a></p>
+			                            <div class="product-price clearfix">$80.99</div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <a href="product.html"><img src="build/img/products/3.jpg" class="img-responsive product-img" alt=""></a>
+			                        <div class="product-details">
+			                            <p class="product-title clearfix"><a href="product.html">Unisex Cap</a></p>
+			                            <div class="product-price clearfix">$99.99</div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <a href="product.html"><img src="build/img/products/12.jpg" class="img-responsive product-img" alt=""></a>
+			                        <div class="product-details">
+			                            <p class="product-title clearfix"><a href="product.html">Twill Silk Scarf</a></p>
+			                            <div class="product-price clearfix">$49.99</div>
+			                        </div>
+			                    </li>
+			                </div>
+			                <li class="dropdown-footer">
+				                <a href="cart.html">View Cart</a>
+			                </li>
+			            </ul>
+			        </li>
+			        
+			    </ul>
+	        	<div id="navbar" class="navbar-collapse collapse">
+				    <ul class="nav navbar-nav navbar-left">
+				        <li>
+				            <a href="index.html" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Home <i class="caret"></i></a>
+				            <ul class="dropdown-menu">
+				                <li><a href="index.html">Home Default</a></li>
+				                <li><a href="index-2.html">Home Default Slider</a></li>
+				                <li><a href="index-3.html">Home Overlay Products</a></li>
+				                <li><a href="index-4.html#instagram">Home instagram section</a></li>
+				            </ul>
+				        </li>
+				      
+				       
+				        <li><a href="about.html">About</a></li>
+				        <li><a href="contact.html">Contact</a></li>
+				        <li><a href="checkout.html">Checkout</a></li>
+
+				    </ul>
+			    </div><!--/.nav-collapse -->
+	      	</div><!--/.container -->
+	    </nav>
+	<!-- /.nav-container -->
+
+	<div class="page-head content-top-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-7">
+					<ol class="breadcrumb">
+						<li><a href="/">Home</a></li>
+						<li><a href="product.html#!">Products</a></li>
+						<li class="active">{{product.name}}</li>
+					</ol>
+				</div>
+
+				
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /.page-head -->
+
+	<section class="section single-product-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="product-images">
+						<div class="product-thumbnail">
+							<a href="build/img/products/13.jpg" class="fancybox" rel="gallery">
+								<img src="{{product.image}}" class="img-responsive">
+							</a>
+						</div>
+						<div class="product-images-carousel">
+							
+						</div>
+					</div><!-- /.product-images -->
+				</div>
+
+				<div class="col-sm-6 col-sm-offset-1">
+					<div class="product-details">
+						<div class="rating">
+							<div class="star-rating">
+								<span style="width:90%"></span>
+							</div>
+							
+						</div>
+
+						<div class="product-title">
+							<h3 class="product-name">{{product.name}}</h3>
+							<p class="product-available">In Stock / Shipping Available</p>
+							<hr>
+						</div>
+
+						<div class="description">
+							{{product.desc}}
+						</div>
+
+						<p class="price">
+							
+							<ins>
+								<span class="amount">${{product.price}}</span>
+							</ins>
+						</p>
+
+						<form action="product.html#!" method="POST" class="inputs-border">
+							<div class="product-attributes row">
+								
+							</div>
+
+							<div class="form-group">
+								<div class="quantity">
+									<input type="button" value="+" class="plus">
+									<input type="number" step="1" max="5" min="1" value="1" title="Qty" class="qty" size="4">
+									<input type="button" value="-" class="minus">
+								</div>
+
+								<button type="button" class="btn btn-default"><i class="lil-add_shopping_cart"></i> Add to cart</button>
+							</div>
+						</form>
+
+						<div class="product-share">
+							<span>Share on</span>
+							<ul class="social">
+								<li><a href="product.html#!"><i class="lil-facebook"></i></a></li>
+								<li><a href="product.html#!"><i class="lil-twitter"></i></a></li>
+								<li><a href="product.html#!"><i class="lil-google-plus"></i></a></li>
+								<li><a href="product.html#!"><i class="lil-linkedin"></i></a></li>
+								<li><a href="product.html#!"><i class="lil-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div><!-- /.product-details -->
+				</div>
+
+				<div class="col-sm-12">
+					
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.products -->
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="widgets">
+				<div class="row">
+					
+					<div class="col-sm-3 widget widget-links">
+						<h3 class="widget-title">My Account</h3>
+						<div class="row">
+							<ul class="col-xs-6">
+								<li><a href="product.html#!" class="effect">My Account</a></li>
+								<li><a href="product.html#!" class="effect">My Order</a></li>
+								<li><a href="product.html#!" class="effect">My Wishlist</a></li>
+								<li><a href="product.html#!" class="effect">My Profile</a></li>
+								<li><a href="product.html#!" class="effect">My Address</a></li>
+								<li><a href="product.html#!" class="effect">My Products</a></li>
+							</ul>
+							<ul class="col-xs-6">
+								<li><a href="product.html#!" class="effect">About Us</a></li>
+								<li><a href="product.html#!" class="effect">Contact</a></li>
+								<li><a href="product.html#!" class="effect">Payment</a></li>
+								<li><a href="product.html#!" class="effect">Blog</a></li>
+								<li><a href="product.html#!" class="effect">FAQ's</a></li>
+								<li><a href="product.html#!" class="effect">Order</a></li>
+							</ul>
+						</div>
+					</div><!-- ./widget -->
+					<div class="col-sm-3 widget widget-instagram">
+						<h3 class="widget-title">Instagram</h3>
+						<ul class="row">
+							<li class="col-xs-4">
+								<a href="product.html#!">
+									<img src="build/img/products/23.jpg" class="img-responsive" alt="">
+								</a>
+							</li>
+							<li class="col-xs-4">
+								<a href="product.html#!">
+									<img src="build/img/products/20.jpg" class="img-responsive" alt="">
+								</a>
+							</li>
+							<li class="col-xs-4">
+								<a href="product.html#!">
+									<img src="build/img/products/18.jpg" class="img-responsive" alt="">
+								</a>
+							</li>
+							<li class="col-xs-4">
+								<a href="product.html#!">
+									<img src="build/img/products/19.jpg" class="img-responsive" alt="">
+								</a>
+							</li>
+							<li class="col-xs-4">
+								<a href="product.html#!">
+									<img src="build/img/products/24.jpg" class="img-responsive" alt="">
+								</a>
+							</li>
+							<li class="col-xs-4">
+								<a href="product.html#!">
+									<img src="build/img/products/12.jpg" class="img-responsive" alt="">
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.widget -->
+					<div class="col-sm-3 widget widget-newsletter">
+						<h3 class="widget-title">Join our Newsletter</h3>
+						<form action="product.html#!" method="POST" class="inputs-border clearfix">
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Your Email" class="form-control" autocomplete="off">
+								<button type="submit" class="btn btn-primary"><i class="lil-long-arrow-right"></i></button>
+							</div>
+						</form>
+						<ul class="social">
+							<li><a href="product.html#!" target="_blank"><i class="lil-facebook"></i></a></li>
+							<li><a href="product.html#!" target="_blank"><i class="lil-twitter"></i></a></li>
+							<li><a href="product.html#!" target="_blank"><i class="lil-instagram"></i></a></li>
+							<li><a href="product.html#!" target="_blank"><i class="lil-dribbble"></i></a></li>
+						</ul>
+					</div><!-- ./widget -->
+				</div><!-- /.row -->
+			</div><!-- /.widgets -->
+		</div><!-- /.container -->
+		<div class="copy-right text-center">
+			<p>© Copyright 2016. All Rights Reserved. Created by <a href="product.html#!" class="effect">Liliom</a></p>
+		</div>
+	</footer><!-- /.footer -->
+
+	<!-- open/close -->
+	<div class="overlay overlay-simplegenie">
+		<i class="overlay-close lil-close"></i>
+		<div class="container">
+			<div class="row text-center pos-r">
+				<div class="col-md-7 col-xs-11 col-center col-height-center search-form">
+					<form action="product.html#!" method="POST" class="inputs-bg" id="searchform">
+						<strong>Type a sentence or word you want to search for, And press Enter.</strong>
+						<input type="text" name="q" class="form-control" placeholder="Search..">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.overlay -->
+
+	<!-- Go to top -->
+	<a href="product.html#top" class="go-to-top">
+		<i class="lil-angle-double-down"></i>
+	</a>
+
+	<!-- All Theme Scripts -->
+	<script type="text/javascript" src="build/js/min.js"></script>
+</body>
+</html>

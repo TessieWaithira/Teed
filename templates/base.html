@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        {% block meta_tags %}{% endblock %}
+        <title>
+            {% block title %}{% trans "Teed" %}{% endblock %}
+        </title>
+        {% block stylesheets %}
+           <!-- Load Fonts -->
+	        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Inconsolata:300,400,500,700|Unica+One:300,400,500,700">
+	<!-- All theme style -->
+	        <link rel="stylesheet" type="text/css" media="all" href="{% static "build/css/min.css" %}">
+	        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <header class="navbar navbar-fixed-top">
+            {% include "howdy/navigation.html" %}
+        </header>
+        <div id="main" role="main">
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
+
+
